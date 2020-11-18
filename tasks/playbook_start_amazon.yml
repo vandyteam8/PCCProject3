@@ -8,7 +8,7 @@
     amazon.aws.ec2:
       key_name: mykey
       group: databases
-      instance_type: t2.micro
+      instance_type: t2.medium
       image: ami-123456
       wait: yes
       wait_timeout: 500
@@ -32,7 +32,7 @@
     amazon.aws.ec2:
       key_name: mykey
       group: databases
-      instance_type: t2.micro
+      instance_type: t2.medium
       image: ami-123456
       wait: yes
       wait_timeout: 500

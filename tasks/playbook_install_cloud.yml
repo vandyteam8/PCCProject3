@@ -39,7 +39,6 @@
   - name: Install boto3 (Python for AWS)
     command: pip3 install boto3 #may have to check if python3/pip3 is installed
 
-
   - name: Cloning project from github
     git: 
       repo: https://github.com/vandyteam8/PCCProject1.git

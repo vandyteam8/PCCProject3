@@ -5,9 +5,9 @@ clouds:
     chameleon: #this is the nickname we now use in playbooks
         auth: #here we provide all the credentials so you do not have to type
               #this plaintext in all your playbooks
-            auth_url: https://kvm.tacc.chameleoncloud.org:5000/v3
-            username: mills19
-            password: goCommodore64!
+            auth_url: https://kvm.tacc.chameleoncloud.org:5000/
+            username: gourumv
+            password: Starmax19720?
             project_name: CH-822922
             user_domain_name: default
             project_domain_name: default

@@ -12,7 +12,7 @@
         image: CC-Ubuntu18.04
         key_name: t8-varun-evan-sam
         timeout: 200
-        flavor: m1.small
+        flavor: m1.medium
         security_groups: "default,kafka,couchdb,zookeeper-couchdb-kafka"
         network: CH-822922-net
         floating_ips:
@@ -26,7 +26,7 @@
         image: CC-Ubuntu18.04
         key_name: t8-varun-evan-sam
         timeout: 200
-        flavor: m1.small
+        flavor: m1.medium
         security_groups: "default,kafka,couchdb,zookeeper-couchdb-kafka"
         network: CH-822922-net
         floating_ips:
