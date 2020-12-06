@@ -12,6 +12,6 @@ ADD consumer.py ~/consumer.py
 
 EXPOSE 9092
 
-CMD ["python3", "~/consumer.py"]
+CMD ["python3", "~/consumer.py", "10.60.5.141"]
 
 
