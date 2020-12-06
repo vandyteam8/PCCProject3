@@ -65,5 +65,9 @@ services:
       - ./zk-single-kafka-multiple/kafka3/data:/var/lib/kafka/data
     depends_on:
       - zoo1
+  web:
+    build: .
+    ports:
+      - "9092:9092"
     
     
