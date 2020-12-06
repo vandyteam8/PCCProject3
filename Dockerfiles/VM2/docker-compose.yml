@@ -67,7 +67,6 @@ services:
       - zoo1
   web:
     build: .
-    ports:
-      - "9092:9092"
+    
     
     
