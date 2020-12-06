@@ -10,7 +10,6 @@ RUN apt-get install -y python3-requests
 
 ADD consumer.py ~/consumer.py
 
-EXPOSE 9092
 
 CMD ["python3", "~/consumer.py", "10.60.5.141"]
 
