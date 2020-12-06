@@ -11,6 +11,6 @@ RUN apt-get install -y python3-requests
 ADD consumer.py ~/consumer.py
 
 
-CMD ["python3", "~/consumer.py", "10.60.5.141"]
+CMD ["python3", "~/consumer.py", "34.195.182.141"]
 
 
