@@ -28,8 +28,7 @@ services:
       KAFKA_LOG4J_LOGGERS: "kafka.controller=INFO,kafka.producer.async.DefaultEventHandler=INFO,state.change.logger=INFO"
     volumes:
       - ./zk-single-kafka-multiple/kafka1/data:/var/lib/kafka/data
-    depends_on:
-      - zoo1
+    
 
   kafka2:
     image: confluentinc/cp-kafka:5.5.1
@@ -45,10 +44,7 @@ services:
       KAFKA_LOG4J_LOGGERS: "kafka.controller=INFO,kafka.producer.async.DefaultEventHandler=INFO,state.change.logger=INFO"
     volumes:
       - ./zk-single-kafka-multiple/kafka2/data:/var/lib/kafka/data
-    depends_on:
-      - zoo1
-
-
+    
   kafka3:
     image: confluentinc/cp-kafka:5.5.1
     hostname: kafka3
@@ -63,5 +59,4 @@ services:
       KAFKA_LOG4J_LOGGERS: "kafka.controller=INFO,kafka.producer.async.DefaultEventHandler=INFO,state.change.logger=INFO"
     volumes:
       - ./zk-single-kafka-multiple/kafka3/data:/var/lib/kafka/data
-    depends_on:
-      - zoo1
+    
