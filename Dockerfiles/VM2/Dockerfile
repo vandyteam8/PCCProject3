@@ -9,7 +9,8 @@ RUN apt-get install -y python3-kafka
 RUN apt-get install -y python3-requests
 
 ADD consumer.py ~/consumer.py
- 
+
+EXPOSE 9092
 
 CMD ["~/consumer.py"]
 
