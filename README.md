@@ -1,19 +1,12 @@
-# PCCProject2
+# PCCProject3
 
-Control Flow  
-* Issue "vagrant up" command in the AnsibleVagrantScaffold directory  
-* Vagrant reads Vagrantfile  
-  * Vagrantfile copies files from the directory into the Vagrant image  
-  * Vagrantfile also runs a shell script that install some packages like openstack  
-  * Vagrantfile then launches Ansible provision  
-* Ansible playbook launches with playbook_demo_master.yml  
-  * Ansible gets local VM facts  
-  * Ansible then includes playbook_start_chameleon.yml which spins up the Chameleon Cloud  
-  * Then use playbook_install_cloud.yml to install Kafka/Zookeeper  
-  * ###MISSING### Playbook_zookeeper.yml should start Zookeeper on VM2  
-  * ###MISSING### playbook_kafka.yml should start Kafka on both VMs  
-  * ##NOT WORKING## playbook_couchdb.yml should install CouchDB on VM3  
-  * ##MISSING## playbook_consumer.yml should start consumer.py on VM 2 & VM3  
-  * ##MISSING## Ansible should start producer.py on Vagrant  
-
-- Also need to have a way to see the CouchDB server, ideally without checking Floating IP with Chameleon Cloud  
+Control Flow
+* SSH into our 2 AWS instances. (VM2 and VM3)
+* Build the Dockerfile in VM2 
+    docker build .
+* Run the docker compose file in VM2:
+    docker-compose up -d
+* Follow the same steps for VM3 that were used for VM2
+* On your local VM, run producer.py:
+    python3 producer.py <floating IP VM2/VM3>
+* Navigate to: http://34.195.182.141:5984/_utils/#login (user: admin, pw: vandy)
