@@ -9,4 +9,4 @@ Control Flow
 * Follow the same steps for VM3 that were used for VM2
 * On your local VM, run producer.py:
     python3 producer.py <floating IP VM2/VM3>
-* Navigate to: http://129.114.27.249:5984/_utils/# (user: admin, pw: vandy)
+* Navigate to: http://34.195.182.141:5984/_utils/#login (user: admin, pw: vandy)
